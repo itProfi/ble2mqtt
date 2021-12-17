@@ -34,12 +34,15 @@ otherwise no Bluetooth advertisements can be received. How to do this is describ
 | Environment Variable | Default Value      | Description                                                                               |
 |:-------------------- |:------------------ |:----------------------------------------------------------------------------------------- |
 | `BROKER_URL`         | `mqtt://localhost` | MQTT-Broker URI                                                                           |
+| `BROKER_USERNAME`    | `''`               | MQTT-Broker username                                                                      |
+| `BROKER_PASSWORD`    | `''`               | MQTT-Broker password                                                                      |
 | `TOPIC_PREFIX`       | `ble2mqtt`         | Prefix used to generate MQTT topics                                                       |
 | `CACHE_TTL`          | `5000`             | Cache TTL in ms, set to `0` to disable cache and publish every single message it gets     |
 | `RETAIN_FLAG`        | `0`                | Set the retain flag for MQTT messages? Default is no, set to `1` to enable.               |
 | `WHITELIST`          | -                  | Comma seperated list of device UUIDs or addresses. If set, all other devices are ignored. |
 | `MONITORING_ID`      | -                  | Added to monitoring topics like `pid` or `uptime` to distinguish multiple agents          |
 | `WATCHDOG_SUICIDE`   | `0`                | Setting this to `1` allows the internal Watchdog to kill ble2mqtt if something goes wrong |
+
 
 ## ⌨️ Usage
 
