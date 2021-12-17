@@ -36,6 +36,7 @@ otherwise no Bluetooth advertisements can be received. How to do this is describ
 | `BROKER_URL`         | `mqtt://localhost` | MQTT-Broker URI                                                                           |
 | `BROKER_USERNAME`    | `''`               | MQTT-Broker username                                                                      |
 | `BROKER_PASSWORD`    | `''`               | MQTT-Broker password                                                                      |
+| `BROKER_PORT`        | `1883`             | MQTT-Broker port                                                                          |
 | `TOPIC_PREFIX`       | `ble2mqtt`         | Prefix used to generate MQTT topics                                                       |
 | `CACHE_TTL`          | `5000`             | Cache TTL in ms, set to `0` to disable cache and publish every single message it gets     |
 | `RETAIN_FLAG`        | `0`                | Set the retain flag for MQTT messages? Default is no, set to `1` to enable.               |
